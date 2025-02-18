@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.bf01bfc2.css",
+    "main.js": "/React-Portfolio/static/js/main.d4b6fb84.js",
+    "static/media/llp.png": "/React-Portfolio/static/media/llp.cd1c01238e2898df21dc.png",
+    "static/media/avatar3.avif": "/React-Portfolio/static/media/avatar3.3e5124a1829192f406da.avif",
+    "static/media/port4.avif": "/React-Portfolio/static/media/port4.f1d1dfb3e78b7efb280f.avif",
+    "static/media/port5.avif": "/React-Portfolio/static/media/port5.63a955a5bd549dbe86a1.avif",
+    "static/media/lateef.jpeg": "/React-Portfolio/static/media/lateef.de4646a1ae3a5412a963.jpeg",
+    "static/media/port3.avif": "/React-Portfolio/static/media/port3.0bfd32519cdfed725c45.avif",
+    "static/media/avat1.jpeg": "/React-Portfolio/static/media/avat1.d5ee3e2e4daaac7ffa00.jpeg",
+    "static/media/port2.avif": "/React-Portfolio/static/media/port2.8d8d8acf24eb26864077.avif",
+    "static/media/port1.avif": "/React-Portfolio/static/media/port1.b00805fd1525fa892ef1.avif",
+    "static/media/avatar1.avif": "/React-Portfolio/static/media/avatar1.0f7136bafc61fda36c3e.avif",
+    "static/media/avatar2.avif": "/React-Portfolio/static/media/avatar2.66a96b89eb6f9de8c366.avif",
+    "index.html": "/React-Portfolio/index.html",
+    "main.bf01bfc2.css.map": "/React-Portfolio/static/css/main.bf01bfc2.css.map",
+    "main.d4b6fb84.js.map": "/React-Portfolio/static/js/main.d4b6fb84.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf01bfc2.css",
+    "static/js/main.d4b6fb84.js"
+  ]
+}
