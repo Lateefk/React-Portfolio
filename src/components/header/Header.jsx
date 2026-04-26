@@ -14,7 +14,7 @@ const Header = () => {
         <HeaderSocials/>
 
         <div className="mee">
-          <img src={publicPath('/assets/lateef.jpeg')} alt="Lateef Kassim" />
+          <img src={publicPath('/assets/llp.png')} alt="Lateef Kassim" />
         </div>
 
         <a href="#contact" className='scroll__down'>Scroll Down</a>
