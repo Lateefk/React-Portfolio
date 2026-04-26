@@ -6,11 +6,36 @@
 .client__avatar{
     width: 4rem;
     aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
     overflow: hidden;
     border-radius: 50%;
     margin: 0 auto 1rem;
     border: 0.4rem solid var(--color-primary-variant);
 
+}
+
+.client__avatar-fallback{
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.avatar--gold{
+    background: linear-gradient(135deg, #f59e0b, #b45309);
+}
+
+.avatar--teal{
+    background: linear-gradient(135deg, #14b8a6, #0f766e);
+}
+
+.avatar--purple{
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+}
+
+.avatar--indigo{
+    background: linear-gradient(135deg, #6366f1, #3730a3);
 }
 
 .testimonial{

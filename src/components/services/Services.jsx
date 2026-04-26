@@ -1,102 +1,89 @@
 import React from 'react'
-import './Services.css'
 import { FaCheck } from "react-icons/fa";
 
 const Services = () => {
   return (
     <section id="services">
-      <h5>What I Offer</h5>
+      <h5>Solutions I Deliver</h5>
       <h2>Services</h2>
 
       <div className="container services__container">
         <article className="service">
           <div className="service__head">
-            <h3>Blockchain Development</h3>
+            <h3>Blockchain & Web3 Development</h3>
           </div>
 
           <ul className="service__list">
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Skilled in dApps, smart contracts, and Ethereum/Solidity.</p>
+            <p>Production-ready smart contracts and dApps built with Solidity and modern Web3 tooling.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Creating efficient, scalable blockchain solutions.</p>
+            <p>Secure contract architecture, gas-aware optimization, and practical on-chain/off-chain integration.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Collaborating with clients and teams for custom solutions.</p>
+            <p>Wallet connection, transaction flows, and user-friendly blockchain onboarding for non-technical users.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Optimizing blockchain protocols for performance.</p>
+            <p>Clear documentation and maintainable codebases that teams can scale confidently after launch.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Optimizing blockchain protocols for performance.</p>
-
-            </li>
-            <li>
-            <FaCheck className='service__list-icon'/>
-            <p>Passionate about exploring new blockchain use cases and technologies.</p>
+            <p>Collaboration across product, design, and engineering to deliver measurable business outcomes.</p>
 
             </li>
           
           </ul>
         </article>
-        {/* END OF UI/UX */}
-
 
         <article className="service">
           <div className="service__head">
-            <h3>Web Development</h3>
+            <h3>Full-Stack Web Development</h3>
           </div>
 
           <ul className="service__list">
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Expertise in front-end (HTML, CSS, JavaScript) and back-end (Node.js,databases) technologies.</p>
+            <p>High-performance web apps with React, Node.js, Express, and scalable data models.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Skilled in troubleshooting issues and optimizing web performance.</p>
+            <p>API-first architecture with clean REST endpoints, authentication, and role-based access control.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Ensuring pixel-perfect design, seamless functionality, and bug-free experiences.</p>
+            <p>Responsive and accessible interfaces that maintain quality across devices and browsers.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Creating intuitive, responsive, and accessible websites for all users.</p>
+            <p>Performance tuning, debugging, and reliability improvements for faster load and better retention.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Collaborating clearly with clients, designers, and teams to meet project goals.</p>
+            <p>End-to-end delivery from planning to deployment with maintainable, testable code.</p>
 
             </li>
-
-           
           </ul>
         </article>
-
-        {/* EMD OF WEB DEVELOPEMENT */}
-
 
         <article className="service">
           <div className="service__head">
@@ -106,39 +93,36 @@ const Services = () => {
           <ul className="service__list">
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Skilled in mobile development platforms (iOS, Android), and programming languages (Swift, React Native).</p>
+            <p>Cross-platform mobile apps with React Native focused on smooth UX and reliable performance.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Efficient at tackling challenges and optimizing app performance.</p>
+            <p>Reusable component architecture, state management, and API integration for maintainable apps.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Focused on delivering smooth, bug-free, and visually appealing apps.</p>
+            <p>Authentication, notifications, and offline-friendly flows for real-world user scenarios.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Strong collaboration with teams and clients to ensure successful outcomes.</p>
+            <p>Store-ready releases with debugging, QA support, and iterative feature delivery.</p>
 
             </li>
 
             <li>
             <FaCheck className='service__list-icon'/>
-            <p>Always up-to-date with the latest trends and tools in mobile development.</p>
+            <p>Close collaboration with stakeholders to align product goals, timelines, and quality standards.</p>
 
             </li>
 
-      
           </ul>
         </article>
-
-
       </div>
     </section>
   )

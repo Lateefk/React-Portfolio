@@ -1,29 +1,21 @@
-import React, { useRef } from "react";
-import "./Contact.css";
+import React from "react";
 import { IoMdMail } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
-import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
+    const formData = new FormData(e.target);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
 
-    emailjs
-      .sendForm("service_615j66v", "template_obqmy6p", form.current, "Oa709qfbLvzanT7t4")
-      .then(
-        (result) => {
-          console.log("Email Sent:", result.text);
-          alert("Message sent successfully!");
-        },
-        (error) => {
-          console.log("Error:", error.text);
-          alert("Something went wrong, please try again later.");
-        }
-      );
-
-    e.target.reset(); // Clear the form after submission
+    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    );
+    window.location.href = `mailto:lateefconcept@gmail.com?subject=${subject}&body=${body}`;
+    e.target.reset();
   };
 
   return (
@@ -62,7 +54,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <form ref={form} onSubmit={sendEmail}>
+        <form onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" rows="7" placeholder="Your Message" required></textarea>

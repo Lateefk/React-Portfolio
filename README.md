@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Lateef Kassim Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Professional portfolio website showcasing full-stack, mobile, and blockchain development work.
 
-## Available Scripts
+## Live Links
 
-In the project directory, you can run:
+- Portfolio: [https://lateefk.github.io/React-Portfolio](https://lateefk.github.io/React-Portfolio)
+- LinkedIn: [https://linkedin.com/in/abdullateef-kassim-4a4b83263](https://linkedin.com/in/abdullateef-kassim-4a4b83263)
+- GitHub: [https://github.com/Lateefk](https://github.com/Lateefk)
 
-### `npm start`
+## Featured Case Studies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Nixven (Private Repository)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Lead capture and qualification platform for visa and study-abroad consultants.
 
-### `npm test`
+- Structured intake for destination, budget, documentation, and timeline
+- Unified lead pipeline across website, agent links, and email
+- Built to reduce unqualified enquiries and improve consult booking conversion
+- Early-access usage includes 1,000+ inquiry records and cross-country agency adoption
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Latbridge (Private Repository)
 
-### `npm run build`
+AI-powered real estate intelligence platform for faster property discovery and agent matching.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- AI search and recommendation workflows for relevant property discovery
+- Verified listings and direct buyer-agent communication flows
+- Market insight features for better decision support
+- Platform positioning includes 10,000+ listings, 5,000+ users, and 500+ verified agents
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Private repositories: architecture walkthrough and selected code samples are available on request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+- React
+- React Icons
+- Swiper
+- CSS3
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Local Development
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The downloadable CV is a single file: **`public/assets/lateefcv.pdf`**. Replace that file to update the “Download CV” button (no code changes required).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1) Install dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+### 2) Start development server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run dev
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3) Build for production
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4) Lint (ESLint + Next rules)
 
-### Analyzing the Bundle Size
+Next.js 16 no longer ships a `next lint` CLI; this repo uses ESLint directly:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run lint
+```
 
-### Making a Progressive Web App
+## Contact Flow Security
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This portfolio uses a `mailto:` based contact flow to avoid exposing third-party service keys in client-side code.
 
-### Advanced Configuration
+For production-grade contact processing, route submissions through a backend endpoint with server-side validation and rate limiting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Next Steps Roadmap
 
-### Deployment
+The project now runs on Next.js (export mode for GitHub Pages). Planned upgrades:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Add dedicated project detail routes and richer case-study sections.
+2. Add unit/integration tests for key components.
+3. Add CI checks (lint + build + tests) with GitHub Actions.
+4. Add backend contact endpoint with validation and rate-limiting.
+5. Introduce analytics and performance budgets for ongoing optimization.
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is for personal portfolio use.

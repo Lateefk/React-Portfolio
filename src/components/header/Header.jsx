@@ -1,21 +1,20 @@
 import React from 'react'
-import './Header.css'
+import { publicPath } from '../../lib/publicPath'
 import CTA from '../CTA'
-import Me from '../../assets/llp.png'
 import HeaderSocials from '../HeaderSocials'
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container">
-        <h5>Hello I'm</h5>
+        <h5>Hello I&apos;m</h5>
         <h1>Lateef Kassim</h1>
         <h5 className="text-light">Full Stack Developer || Mobile App Developer|| <br /> Blockchain Developer</h5>
         <CTA/>
         <HeaderSocials/>
 
         <div className="mee">
-          <img src={Me} alt="" />
+          <img src={publicPath('/assets/llp.png')} alt="Lateef Kassim" />
         </div>
 
         <a href="#contact" className='scroll__down'>Scroll Down</a>

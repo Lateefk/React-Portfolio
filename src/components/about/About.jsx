@@ -1,6 +1,5 @@
 import React from 'react'
-import './About.css'
-import ME from '../../assets/lateef.jpeg'
+import { publicPath } from '../../lib/publicPath'
 import { FaAward } from "react-icons/fa";
 import { FaUserFriends } from "react-icons/fa";
 import { MdFolderCopy } from "react-icons/md";
@@ -14,7 +13,7 @@ const About = () => {
      <div className="container about__container">
       <div className="about__me">
         <div className="about__me-image">
-          <img src={ME} alt="About Image" />
+          <img src={publicPath('/assets/lateef.jpeg')} alt="Lateef Kassim" />
           </div>
           
         </div>
@@ -23,27 +22,30 @@ const About = () => {
             <article className='about__card'>
             <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>3+ Years</small>
             </article>
 
             <article className='about__card'>
             <FaUserFriends className='about__icon'/>
               <h5>Clients</h5>
-              <small>50+ Worldwide</small>
+              <small>12+</small>
             </article>
 
             <article className='about__card'>
             <MdFolderCopy className='about__icon'/>
               <h5>Projects</h5>
-              <small>10+ Completed</small>
+              <small>18+</small>
             </article>
           </div>
 
-          <p>I’m a passionate Full Stack Developer with expertise in building responsive, user-centric web applications. From front-end design 
-            to back-end development, I thrive on creating seamless, scalable solutions that deliver exceptional user experiences. With proficiency in modern technologies like React, Node.js, and MongoDB, I enjoy turning complex ideas into simple, elegant solutions. Always eager to learn, adapt,
-             and take on new challenges, I’m dedicated to delivering high-quality, efficient code that drives business success.</p>
+          <p>
+            I am a full-stack developer focused on building scalable web and mobile products that solve real business problems.
+            I work across React, Node.js, APIs, and databases to deliver fast, reliable, and user-friendly applications from
+            planning to production. I enjoy turning complex product requirements into clean technical solutions while maintaining
+            high standards for performance, accessibility, and code quality.
+          </p>
 
-              <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+              <a href="#contact" className='btn btn-primary'>Let&apos;s Talk</a>
 
         
 
