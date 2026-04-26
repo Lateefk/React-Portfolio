@@ -13,7 +13,7 @@ const About = () => {
      <div className="container about__container">
       <div className="about__me">
         <div className="about__me-image">
-          <img src={publicPath('/assets/lateef.jpeg')} alt="Lateef Kassim" />
+          <img src={publicPath('/assets/lateef.jpeg')} alt="Lateef Kassim" loading="lazy" decoding="async" />
           </div>
           
         </div>

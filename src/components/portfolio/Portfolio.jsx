@@ -49,7 +49,7 @@ const Portfolio = () => {
           return (
             <article key={id} className='portfolio__item'>
               <div className="portfolio__item-image">
-                <img src={publicPath(image)} alt={title} />
+                <img src={publicPath(image)} alt={title} loading="lazy" decoding="async" />
               </div>
 
               <h3>{title}</h3>

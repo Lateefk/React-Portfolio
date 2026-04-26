@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Poppins } from 'next/font/google'
 import { publicPath } from '../src/lib/publicPath'
 import '../styles/globals.css'
 import '../src/components/header/Header.css'
@@ -13,6 +14,12 @@ import '../src/components/footer/Footer.css'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600'],
+  display: 'swap',
+})
+
 export default function MyApp({ Component, pageProps }) {
   const textureUrl = publicPath('/assets/bg-texture.png')
   return (
@@ -24,7 +31,9 @@ export default function MyApp({ Component, pageProps }) {
           }}
         />
       </Head>
-      <Component {...pageProps} />
+      <main className={poppins.className}>
+        <Component {...pageProps} />
+      </main>
     </>
   )
 }
