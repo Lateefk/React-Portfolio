@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
-const isGithubPages = process.env.GITHUB_PAGES === 'true'
+// GitHub Pages needs basePath; Vercel serves at the domain root. If GITHUB_PAGES is
+// set by mistake in Vercel env vars, assets 404. Vercel always sets VERCEL=1 at build time.
+const isVercel = process.env.VERCEL === '1'
+const isGithubPages = !isVercel && process.env.GITHUB_PAGES === 'true'
 const publicBasePath = isGithubPages ? '/React-Portfolio' : ''
 
 const nextConfig = {

@@ -73,6 +73,13 @@ This portfolio uses a `mailto:` based contact flow to avoid exposing third-party
 
 For production-grade contact processing, route submissions through a backend endpoint with server-side validation and rate limiting.
 
+## Deploying to Vercel
+
+Import the GitHub repo and use the default **Next.js** settings (`npm run build`).
+
+- **Do not** set the environment variable `GITHUB_PAGES` on Vercel. That mode is only for the `gh-pages` branch / GitHub Pages subpath. If it is set, the built HTML will request assets under `/React-Portfolio/...` and you will get **404** errors for JS/CSS on the Vercel domain.
+- Vercel sets `VERCEL=1` during builds; the app forces root-relative assets on Vercel so this cannot happen from a mistaken `GITHUB_PAGES` value.
+
 ## Next Steps Roadmap
 
 The project now runs on Next.js (export mode for GitHub Pages). Planned upgrades:
